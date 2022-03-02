@@ -88,6 +88,10 @@ function Work() {
 							<p className="p-text" style={{ marginTop: 10 }}>
 								{work.description}
 							</p>
+							<div className="external-links app__flex">
+								<a href={work.projectLink}>visit website</a>
+								<a href={work.codeLink}>view on github</a>
+							</div>
 						</div>
 					</div>
 				))}
