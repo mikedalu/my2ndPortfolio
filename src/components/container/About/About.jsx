@@ -37,7 +37,7 @@ function About() {
 					<motion.div
 						className="app__profile-item"
 						key={about.title + index}
-						animate={{ opacity: [0, 1] }}
+						whileInView={{ opacity: [0, 1] }}
 						whileHover={{ scale: 1.2 }}
 						transition={{ duration: 0.5, type: "tween" }}>
 						<img src={urlFor(about.imgUrl)} alt={about.title} />

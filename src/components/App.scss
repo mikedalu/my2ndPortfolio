@@ -52,19 +52,16 @@
 }
 
 .head-text {
-	font-size: 2.75rem;
+	font-size: 3.2rem;
 	font-weight: 800;
 	text-align: center;
 	color: var(--black-color);
 	text-transform: capitalize;
 	@media (max-width: 900px) {
-		font-size: 2.4rem;
+		font-size: 3rem;
 	}
 	@media (max-width: 700px) {
-		font-size: 2rem;
-	}
-	@media (max-width: 500px) {
-		font-size: 1.9rem;
+		font-size: 2.5rem;
 	}
 
 	span {
@@ -72,7 +69,7 @@
 	}
 
 	@media screen and (min-width: 2000px) {
-		font-size: 4rem;
+		font-size: 2.8rem;
 	}
 
 	@media screen and (max-width: 450px) {
@@ -98,7 +95,7 @@
 }
 
 .bold-text {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: 800;
 	color: var(--black-color);
 	text-align: left;
@@ -108,7 +105,7 @@
 	}
 
 	@media screen and (max-width: 450px) {
-		font-size: 0.9rem;
+		font-size: 1.6rem;
 	}
 }
 
@@ -197,7 +194,12 @@
 		display: none;
 	}
 
-	.copyright {
-		padding: 2rem;
+	.copyright .p-text {
+		padding: 0.5rem;
+		font-size: 1rem;
 	}
+}
+
+.copyright .p-text {
+	font-size: 1rem;
 }

@@ -27,9 +27,19 @@
 	@media (min-width: 2000px) {
 		width: 370px;
 		margin: 2rem 4rem;
+		img {
+			width: 100%;
+			height: 320px;
+		}
 	}
-	img {
-		width: 100%;
-		height: 320px;
-	}
+}
+
+#cv {
+	display: block;
+	position: fixed;
+	top: 50px;
+	right: 10vw;
+	font-size: 2rem;
+	transform: rotate(30deg);
+	z-index: 999;
 }

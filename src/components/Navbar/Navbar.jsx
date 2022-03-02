@@ -23,10 +23,7 @@ function Navbar() {
 				{
 					//if toggle is true
 					toggle && (
-						<motion.div
-							style={{ border: "2px solid red" }}
-							animate={{ x: [300, 0] }}
-							transition={{ duration: 0.5, ease: "easeOut" }}>
+						<motion.div whileInView={{ x: [600, 0] }} viewport={{ once: true }} transition={{ duration: 0.5, ease: "easeOut" }}>
 							<HiX onClick={() => setToggle(false)} />
 							<ul>
 								{["home", "about", "work", "skills", "contact"].map((item) => (

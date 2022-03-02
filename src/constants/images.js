@@ -10,8 +10,8 @@ import react from "../assets/react.png";
 import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 
-import about01 from "../assets/about01.png";
-import about02 from "../assets/about02.png";
+import about01 from "../assets/about01.jpg";
+import about02 from "../assets/about02.jpg";
 import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
 

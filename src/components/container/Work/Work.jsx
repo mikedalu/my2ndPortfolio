@@ -20,7 +20,7 @@ function Work() {
 				setWorks(data);
 				setFilterWork(data);
 			})
-			.catch((err) => alert(err));
+			.catch((err) => console.log(err));
 	}, []);
 	const handleWorkFilter = (item) => {
 		setActiveFilter(item);
@@ -40,13 +40,13 @@ function Work() {
 	};
 	return (
 		<>
-			<h2 className="head-text">
+			<h2 className="head-text absolute ">
 				My creative <span>Portfolio</span>
 			</h2>
 			<div className="app__work-filter">
 				{["UI/UX", "Web App", "Mobile App", "React.js", "All"].map((item, index) => (
 					<div
-						className={`app__work-filter-item app__flex p-text ${activeFilter === item ? "item-active" : ""}`}
+						className={`app__work-filter-item  app__flex p-text ${activeFilter === item ? "item-active" : ""}`}
 						key={index}
 						onClick={() => handleWorkFilter(item)}>
 						{item}
@@ -54,7 +54,7 @@ function Work() {
 				))}
 			</div>
 
-			<motion.div className="app__work-portfolio" animate={animateCard} transition={{ duration: 0.5, delayChildren: 0.5 }}>
+			<motion.div className="app__work-portfolio" animate={animateCard} transition={{ duration: 0.3, delayChildren: 0.3 }}>
 				{filterWork.map((work, index) => (
 					<div className="app__work-item app__flex" key={index}>
 						<div className="app__work-img app__flex">
@@ -66,7 +66,7 @@ function Work() {
 								<a href={work.projectLink} target="_blank" rel="noreferrer">
 									<motion.div
 										className="app__flex"
-										animation={{ scale: [0, 1] }}
+										whileInView={{ scale: [0, 1] }}
 										whileHover={{ scale: [1, 0.9] }}
 										transition={{ duration: 0.24, ease: "easeInOut", staggerChildren: 0.5 }}>
 										<AiFillEye />
@@ -75,7 +75,7 @@ function Work() {
 								<a href={work.codeLink} target="_blank" rel="noreferrer">
 									<motion.div
 										className="app__flex"
-										animation={{ scale: [0, 1] }}
+										whileInView={{ scale: [0, 1] }}
 										whileHover={{ scale: [1, 0.9] }}
 										transition={{ duration: 0.24, ease: "easeInOut", staggerChildren: 0.5 }}>
 										<AiFillGithub />
@@ -88,9 +88,6 @@ function Work() {
 							<p className="p-text" style={{ marginTop: 10 }}>
 								{work.description}
 							</p>
-							<div className="app__work-tag app__flex">
-								<p className="p-text">{work.tags}</p>
-							</div>
 						</div>
 					</div>
 				))}

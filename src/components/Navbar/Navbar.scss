@@ -4,10 +4,8 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 1rem 2rem;
-	background-color: #bdf7b33b;
-	backdrop-filter: blur(4px);
-	-webkit-backdrop-filter: blur(4px);
-	border: 1px solid rgba(255, 255, 255, 0.18);
+	background-color: var(--secondary-color);
+
 	position: fixed;
 	z-index: 2;
 }
@@ -15,6 +13,9 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	background-color: white;
+	padding: 4px 8px;
+	border-radius: 4px;
 	img {
 		width: 90px;
 		height: 20px;
@@ -41,14 +42,15 @@
 			margin-bottom: 5px;
 		}
 		a {
-			color: var(--gray-color);
+			font-size: 1.6rem;
+			color: var(--white-color);
 			text-decoration: none;
 			flex-direction: column;
 			text-transform: uppercase;
 			font-weight: 500;
 			transition: all 0.3s ease-in-out;
 			&:hover {
-				color: var(--secondary-color);
+				color: rgb(216, 211, 211);
 			}
 		}
 		&:hover {
@@ -124,7 +126,7 @@
 			flex-direction: column;
 			a {
 				color: var(--gray-color);
-				font-size: 1rem;
+				font-size: 1.6rem;
 				padding: 1rem;
 				text-decoration: none;
 				text-transform: uppercase;
