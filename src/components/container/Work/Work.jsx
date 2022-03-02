@@ -44,7 +44,7 @@ function Work() {
 				My creative <span>Portfolio</span>
 			</h2>
 			<div className="app__work-filter">
-				{["UI/UX", "Web App", "Mobile App", "React.js", "All"].map((item, index) => (
+				{["All", "Web App", "Mobile App", "React.js", "UI/UX"].map((item, index) => (
 					<div
 						className={`app__work-filter-item  app__flex p-text ${activeFilter === item ? "item-active" : ""}`}
 						key={index}
