@@ -1,5 +1,5 @@
 import React from "react";
-import { BsTwitter, BsGithub } from "react-icons/bs";
+import { BsTwitter, BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 
 function SocialMedia() {
@@ -18,6 +18,11 @@ function SocialMedia() {
 			<div>
 				<a href="https://www.facebook.com/michael.dalu/">
 					<FaFacebookF />
+				</a>
+			</div>
+			<div>
+				<a href="https://www.linkedin.com/in/micheal-dalu-6b0847156">
+					<BsLinkedin />
 				</a>
 			</div>
 		</div>
