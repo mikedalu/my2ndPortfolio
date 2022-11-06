@@ -9,6 +9,7 @@ import node from "../assets/node.png";
 import react from "../assets/react.png";
 import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
+import nest from "../assets/nest.png";
 
 import about01 from "../assets/about01.jpg";
 import about02 from "../assets/about02.jpg";
@@ -34,4 +35,5 @@ export default {
 	profile,
 	circle,
 	myLogo,
+	nest,
 };

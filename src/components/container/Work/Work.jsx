@@ -14,8 +14,7 @@ function Work() {
 
 	useEffect(() => {
 		const query = '*[_type == "works"]';
-		client
-			.fetch(query)
+		client.fetch(query)
 			.then((data) => {
 				setWorks(data);
 				setFilterWork(data);
@@ -44,7 +43,7 @@ function Work() {
 				My creative <span>Portfolio</span>
 			</h2>
 			<div className="app__work-filter">
-				{["All", "Web App", "Mobile App", "React.js", "UI/UX"].map((item, index) => (
+				{["All", "Web App", "React.js"].map((item, index) => (
 					<div
 						className={`app__work-filter-item  app__flex p-text ${activeFilter === item ? "item-active" : ""}`}
 						key={index}
@@ -68,7 +67,11 @@ function Work() {
 										className="app__flex"
 										whileInView={{ scale: [0, 1] }}
 										whileHover={{ scale: [1, 0.9] }}
-										transition={{ duration: 0.24, ease: "easeInOut", staggerChildren: 0.5 }}>
+										transition={{
+											duration: 0.24,
+											ease: "easeInOut",
+											staggerChildren: 0.5,
+										}}>
 										<AiFillEye />
 									</motion.div>
 								</a>
@@ -77,7 +80,11 @@ function Work() {
 										className="app__flex"
 										whileInView={{ scale: [0, 1] }}
 										whileHover={{ scale: [1, 0.9] }}
-										transition={{ duration: 0.24, ease: "easeInOut", staggerChildren: 0.5 }}>
+										transition={{
+											duration: 0.24,
+											ease: "easeInOut",
+											staggerChildren: 0.5,
+										}}>
 										<AiFillGithub />
 									</motion.div>
 								</a>
