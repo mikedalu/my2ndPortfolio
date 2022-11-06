@@ -2,17 +2,18 @@
 	flex: 1;
 	width: 100%;
 	flex-direction: column;
+	margin: 2px;
 }
 .app__profiles {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	margin-top: 2rem;
+	margin-top: 1.2rem;
 }
 
 .app__profile-item {
-	width: 350px;
+	width: 60%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
