@@ -4,12 +4,12 @@ import css from "../assets/css.png";
 import figma from "../assets/figma.png";
 import git from "../assets/git.png";
 import html from "../assets/html.png";
-import javascript from "../assets/javascript.png";
+import java from "../assets/java.png";
 import node from "../assets/node.png";
 import react from "../assets/react.png";
 import redux from "../assets/redux.png";
-import sass from "../assets/sass.png";
 import nest from "../assets/nest.png";
+import spring from "../assets/spring.png";
 
 import about01 from "../assets/about01.jpg";
 import about02 from "../assets/about02.jpg";
@@ -25,11 +25,11 @@ export default {
 	figma,
 	git,
 	html,
-	javascript,
+	spring,
+	java,
 	node,
 	react,
 	redux,
-	sass,
 	about01,
 	about02,
 	profile,

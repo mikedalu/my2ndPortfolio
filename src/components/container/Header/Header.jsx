@@ -21,7 +21,7 @@ function Header() {
 						</div>
 					</div>
 					<div className="tag-cmp app__flex">
-						<h2 className="head-text">Fullstack Developer</h2>
+						<h2 className="head-text">Backend | Fullstack Engineer</h2>
 					</div>
 				</div>
 			</motion.div>
@@ -40,7 +40,7 @@ function Header() {
 				whileInView={scaleVariants.animate}
 				transition={{ duration: 0, delayChildren: 0.5 }}
 				className="app__header-circles">
-				{[images.javascript, images.react, images.node].map((circle, index) => (
+				{[images.react, images.java, images.node].map((circle, index) => (
 					<div className="circle-cmp app__flex" key={`circle-${index}`}>
 						<img src={circle} alt="cirlce" />
 					</div>

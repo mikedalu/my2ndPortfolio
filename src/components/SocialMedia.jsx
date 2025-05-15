@@ -15,11 +15,7 @@ function SocialMedia() {
 					<BsGithub />
 				</a>
 			</div>
-			<div>
-				<a href="https://www.facebook.com/michael.dalu/">
-					<FaFacebookF />
-				</a>
-			</div>
+
 			<div>
 				<a href="https://www.linkedin.com/in/micheal-dalu-6b0847156">
 					<BsLinkedin />
