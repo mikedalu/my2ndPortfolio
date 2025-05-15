@@ -26,8 +26,7 @@ function Footer() {
 			message: message,
 			email: email,
 		};
-		client
-			.create(contact)
+		client.create(contact)
 			.then(() => {
 				setLoading(false);
 				setIsFormSubmitted(true);
@@ -37,7 +36,7 @@ function Footer() {
 
 	return (
 		<>
-			<h2 className="head-text">Take a coffe & chat with me</h2>
+			<h2 className="head-text">Feel free to book a chat</h2>
 			<div className="app__footer-cards">
 				<div className="app__footer-card">
 					<img src={images.email} alt={email} />
@@ -55,7 +54,14 @@ function Footer() {
 			{!isFormSubmitted ? (
 				<div className="app__footer-form app__flex">
 					<div className="app__flex">
-						<input className="p-text" name="name" type="text" placeholder="Your Name" value={name} onChange={handleChangeInput} />
+						<input
+							className="p-text"
+							name="name"
+							type="text"
+							placeholder="Your Name"
+							value={name}
+							onChange={handleChangeInput}
+						/>
 					</div>
 					<div className="app__flex">
 						<input
@@ -68,7 +74,13 @@ function Footer() {
 						/>
 					</div>
 					<div>
-						<textarea className="p-text" placeholder="Your message" name="message" value={message} onChange={handleChangeInput} />
+						<textarea
+							className="p-text"
+							placeholder="Your message"
+							name="message"
+							value={message}
+							onChange={handleChangeInput}
+						/>
 					</div>
 					<button type="button" className="p-text" onClick={handleSubmit}>
 						{loading ? "Sending" : "Send message"}
